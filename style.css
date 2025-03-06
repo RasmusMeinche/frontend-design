@@ -65,8 +65,8 @@ article {
         display: grid;
         grid-template-columns: 1fr 1fr;
 
-        & img {
-            order: 0;
+        li:nth-child(even) img {
+            order: 1;
         }
     }
 
