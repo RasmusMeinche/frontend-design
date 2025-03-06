@@ -70,6 +70,8 @@ article {
         }
     }
 
+    /* kommentar */
+
     /* Tilføj container regel når width > 500px */
     /* - Indstil 2 kolonner */
     /* - Sæt `order: 1;` på img på hvert andet card */
