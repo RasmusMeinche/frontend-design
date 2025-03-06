@@ -5,8 +5,87 @@
     --color-text-button: #FFF;
 
     /* Når du synes, du er færdig, så ændr værdien herunder til '1' for at se dit resultat i browseren */
-    --hide-overlay: 0;
+    --hide-overlay: 1;
 }
 
 
 /* Begynd her... */
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.billeder {
+display: grid;
+grid-column: 2;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: auto;
+gap: 1rem;
+justify-content: center;
+}
+
+.billeder img {
+    border-radius: 1rem;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+}
+
+#en {
+    grid-column: 2;
+    grid-row: 1;
+}
+#to {
+    grid-column: 1;
+    grid-row: 2;
+}
+#tre {
+    grid-column: 2;
+    grid-row: 2/3;
+}
+#fire {
+    grid-column: 3;
+    grid-row: 2;
+}
+#fem {
+    grid-column: 3;
+    grid-row: 3;
+}
+#seks {
+    grid-column: 1;
+    grid-row: 3;
+}
+#syv {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.text {
+    display: grid;
+    grid-column: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+}
+
+.text h1 {
+    color: var(--color-heading);
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+button {
+    background-color: var(--color-bg-button);
+    width: 200px;
+    border-radius: 2rem;
+    color: #FFF;
+    padding: 10px;
+}
